@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Figgle;
-
-namespace MultiTool
+﻿using Figgle;
+namespace PHKlassenBibliothek
 {
-    internal class Hauptmenue
+    public class PHMenue
     {
-        public static void HauptmenueAufruf()
+        public static void PH_Menue()
         {
             bool Exit = false;
 
@@ -95,8 +89,6 @@ namespace MultiTool
                 }
 
             } while (!Exit);
-
-
         }
     }
 }
