@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KonsolenExtrasBibliothek\KonsolenExtrasBibliothek.csproj" />
     <ProjectReference Include="..\PHKlassenBibliothek\PHKlassenBibliothek.csproj" />
   </ItemGroup>
 

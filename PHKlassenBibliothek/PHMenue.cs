@@ -64,8 +64,80 @@ namespace PHKlassenBibliothek
                         break;
 
                     case "p":
-                        Console.Clear();
+                        
                         //Hier das Physikmenü aufrufen
+                        bool subexit = false;
+                        do                          
+                        {
+                            Console.Clear();
+                            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
+                            Console.WriteLine("----------------------------------------------------------------------------------------------------------\n");
+                            Console.WriteLine("----             -----      ---      --     -------      ---          ----      ----      ----      ------\n");
+                            Console.WriteLine("----     -------   ----    -----    -----     ----     ----    ------------    ------    ----     --------\n");
+                            Console.WriteLine("----     -------   ----    -----    ------     --     ----     ------------    ------    --     ----------\n");
+                            Console.WriteLine("----     ------   -----    -----    --------       --------      ----------    ------         ------------\n");
+                            Console.WriteLine("----            -------             ---------     ------------      ------     ------         ------------\n");
+                            Console.WriteLine("----     --------------    -----    ---------     ---------------     ----     ------    --     ----------\n");
+                            Console.WriteLine("----     --------------    -----    ---------     -------------      -----     ------    ----     --------\n");
+                            Console.WriteLine("----     -------------      ---      --------     -------          ------      ----      ----      -------\n");
+                            Console.WriteLine("----------------------------------------------------------------------------------------------------------\n");
+
+                            Console.WriteLine("Willkommen im Themenbereich Physik :)\nHier bist du genau richtig, wenn du hilfe beim lösen deiner Aufgaben in den unten Aufgelisteten Themenbereichen brauchst\n.Wenn du hier raus willst, kannst du jeder Zeit mit dem Befehl 'subexit' ins Hauptmenü zurückkehrern.\n");
+
+                            Console.WriteLine("----------------------------------------------------\n");
+                            Console.WriteLine("--   Themenbereiche:                              --\n");
+                            Console.WriteLine("----------------------------------------------------\n");
+                            Console.WriteLine("--   1:                                           --\n");
+                            Console.WriteLine("--   2:                                           --\n");
+                            Console.WriteLine("--   3:                                           --\n");
+                            Console.WriteLine("--   4:                                           --\n");
+                            Console.WriteLine("--   subexit: Hauptmenü                           --\n");
+                            Console.WriteLine("----------------------------------------------------\n");
+
+                            Console.WriteLine("Eingabe: ");
+                            string eingabe = Console.ReadLine();
+                            int feature;
+
+                            if (int.TryParse(eingabe, out feature))
+                            {
+
+                                switch (feature)
+                                {
+                                    case 1:
+                                        //Feature 1
+                                        break;
+
+                                    case 2:
+                                        //Feature 2
+                                        break;
+
+                                    case 3:
+                                        //Feature 3
+                                        break;
+
+                                    case 4:
+                                        //Feature 4
+                                        break;
+                                }
+
+                            }
+                            else if (eingabe == "subexit")
+                            {
+                                Console.Clear();
+                                Console.WriteLine("Sie kehren jetzt zum Hauptmenü zurück.\nViel Erfolg weiterhin.");
+                                subexit = true;
+                                Console.ReadKey();
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("Das hat nicht geklappt...\nUm fortfahren zu können, geben Sie bitte eine der vier vorgegebenen Zahlen an:)");
+                                Console.ReadKey();
+                            }
+
+                        } while (!subexit);
+
                         break;
 
                     case "w":
