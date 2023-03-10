@@ -1,4 +1,5 @@
 ﻿using Figgle;
+
 namespace PHKlassenBibliothek
 {
     public class PHMenue
@@ -65,7 +66,6 @@ namespace PHKlassenBibliothek
                     case "p":
                         Console.Clear();
                         //Hier das Physikmenü aufrufen
-                        PHKlassenBibliothek.PHMenue.PH_Menue();
                         break;
 
                     case "w":
