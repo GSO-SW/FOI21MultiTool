@@ -90,12 +90,10 @@ namespace PHKlassenBibliothek
                             Console.WriteLine("----------------------------------------------------\n");
                             Console.WriteLine("--   Themenbereiche:                              --\n");
                             Console.WriteLine("----------------------------------------------------\n");
-                            Console.WriteLine("--   1: Gravitation                               --\n");
-                            Console.WriteLine("--   2: Lichtbrechung                             --\n");
-                            Console.WriteLine("--   3:                                           --\n");
-                            Console.WriteLine("--   4:                                           --\n");
-                            Console.WriteLine("--                                                --\n");
-                            Console.WriteLine("--   subexit: Zurück zum Hauptmenü                --\n");
+                            Console.WriteLine("\t1: Gravitation");
+                            Console.WriteLine("\t2: Lichtbrechung");
+                            Console.WriteLine("\t3: Lautstärke und Schall");
+                            Console.WriteLine("\t4: ");
                             Console.WriteLine("----------------------------------------------------\n");
 
                             Console.WriteLine("Eingabe: ");
@@ -110,7 +108,7 @@ namespace PHKlassenBibliothek
                                     switch (feature)
                                     {
                                         case 1:
-                                            //Feature 1
+                                            //Feature 1 Danny CallmeBabygirl
                                             do
                                             {
                                                 Console.Title = "Gravitation\n";
@@ -155,15 +153,15 @@ namespace PHKlassenBibliothek
                                             break;
 
                                         case 2:
-                                            //Feature 2
+                                            //Feature 2 Shehan nahehs
                                             break;
 
                                         case 3:
-                                            //Feature 3
+                                            //Feature 3 Cihan Nextsuki
                                             break;
 
                                         case 4:
-                                            //Feature 4
+                                            //Feature 4 Simon simqn
                                             break;
                                     }  
                                     
