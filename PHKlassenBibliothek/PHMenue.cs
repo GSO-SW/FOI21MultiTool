@@ -109,6 +109,7 @@ namespace PHKlassenBibliothek
                                     {
                                         case 1:
                                             //Feature 1 Danny CallmeBabygirl
+                                            Gravitation.Feature1_Gravitation();
                                             break;
 
                                         case 2:
