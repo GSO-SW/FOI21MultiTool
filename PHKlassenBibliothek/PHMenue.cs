@@ -67,7 +67,7 @@ namespace PHKlassenBibliothek
                         Console.Clear();
                         //Hier das Physikmenü aufrufen
                         bool subexit = false;
-                        bool leave = false;
+                        bool neu = true;
                         do
                         {
 
@@ -101,7 +101,7 @@ namespace PHKlassenBibliothek
                             Console.Clear();
                             do
                             {
-                                
+
                                 if (eingabe == "1" | eingabe == "2" | eingabe == "3" | eingabe == "4")
                                 {
                                     int feature = int.Parse(eingabe);
@@ -123,8 +123,8 @@ namespace PHKlassenBibliothek
                                         case 4:
                                             //Feature 4 Simon simqn
                                             break;
-                                    }  
-                                    
+                                    }
+
                                 }
                                 if (eingabe == "subexit")
                                 {
@@ -139,9 +139,10 @@ namespace PHKlassenBibliothek
                                 {
                                     //Falsche Eingabe
                                     Console.WriteLine("Das hat nicht geklappt...\nUm fortfahren zu können, geben Sie bitte eine der vier vorgegebenen Zahlen an oder 'subexit' um ins Hauptmenü zurück zu kehren.:)");
+                                    neu = false;
                                     Console.ReadKey();
                                 }
-                            } while (!leave);
+                            } while (!neu);
 
                         } while (!subexit); 
                         
