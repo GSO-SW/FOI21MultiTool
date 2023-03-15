@@ -87,14 +87,16 @@ namespace PHKlassenBibliothek
                                 "Hier bist du genau richtig, wenn du hilfe beim lösen deiner Aufgaben in den unten Aufgelisteten Themenbereichen brauchst.\n" +
                                 "Wenn du hier raus willst, kannst du jeder Zeit mit dem Befehl 'subexit' ins Hauptmenü zurückkehrern.\n");
 
-                            Console.WriteLine("----------------------------------------------------\n");
-                            Console.WriteLine("--   Themenbereiche:                              --\n");
-                            Console.WriteLine("----------------------------------------------------\n");
-                            Console.WriteLine("\t1: Gravitation");
-                            Console.WriteLine("\t2: Lichtbrechung");
-                            Console.WriteLine("\t3: Lautstärke und Schall");
-                            Console.WriteLine("\t4: ");
-                            Console.WriteLine("----------------------------------------------------\n");
+                            Console.WriteLine("----------------------------------------------------");
+                            Console.WriteLine("--   Themenbereiche:                              --");
+                            Console.WriteLine("----------------------------------------------------");
+                            Console.WriteLine("--\t1: Gravitation                            --");                                                        //Untermenü Physik
+                            Console.WriteLine("--\t2: Lichtbrechung                          --");
+                            Console.WriteLine("--\t3: Lautstärke und Schall                  --");
+                            Console.WriteLine("--\t4: Geschwindigkeit                        --");
+                            Console.WriteLine("--                                                --");
+                            Console.WriteLine("--\tsubexit: Zurück ins Hauptmenü             --");
+                            Console.WriteLine("----------------------------------------------------");
 
                             Console.WriteLine("Eingabe: ");
                             string eingabe = Console.ReadLine();
@@ -144,8 +146,8 @@ namespace PHKlassenBibliothek
                                 }
                             } while (!neu);
 
-                        } while (!subexit); 
-                        
+                        } while (!subexit);
+
                         break;
 
                     case "w":
