@@ -92,8 +92,8 @@ namespace PHKlassenBibliothek
                             Console.WriteLine("----------------------------------------------------\n");
                             Console.WriteLine("--   1: Gravitation                               --\n");
                             Console.WriteLine("--   2: Lichtbrechung                             --\n");
-                            Console.WriteLine("--   3:                                           --\n");
-                            Console.WriteLine("--   4:                                           --\n");
+                            Console.WriteLine("--   3: Lautspärke & Schall                       --\n");
+                            Console.WriteLine("--   4: Geschwindigkeit                           --\n");
                             Console.WriteLine("--                                                --\n");
                             Console.WriteLine("--   subexit: Zurück zum Hauptmenü                --\n");
                             Console.WriteLine("----------------------------------------------------\n");
@@ -110,60 +110,19 @@ namespace PHKlassenBibliothek
                                     switch (feature)
                                     {
                                         case 1:
-                                            //Feature 1
-                                            do
-                                            {
-                                                Console.Title = "Gravitation\n";
-                                                Console.WriteLine("Das ist der Themenbereich Gravitation und ihre Kräfte.\n" +
-                                                    "Hier können Sie lernen und oder Rechnungen aus diesem Themenbereich durchführen lassen.\n" +
-                                                    "Viel Spaß:)\n\n");
-                                                Console.WriteLine("Um zurück ins Untermenü Physik zu kommen geben Sie 'leave' ein.\n");
-                                                Console.WriteLine("Wie wollen Sie fortfahren?");
-                                                Console.WriteLine("1. Informationen");
-                                                Console.WriteLine("2. Rechner");
-                                                Console.WriteLine("leave. Zurück zum Untermenü Physik");
-                                                Console.WriteLine("-------------------------------------------------------------------");
-                                                Console.WriteLine("Geben Sie eine der angegebenen Zahlen an");
-                                                string eingabe_1 = Console.ReadLine();
-                                                if (eingabe_1 == "1" | eingabe_1 == "2")
-                                                {
-                                                    int ieingabe_1 = int.Parse(eingabe_1);
-                                                    switch (ieingabe_1)
-                                                    {
-                                                        case 1:
-                                                            //Informationen Gravitation
-                                                            break;
-                                                        case 2:
-                                                            //Rechner
-                                                            break;
-                                                    }
-                                                }
-                                                else if (eingabe_1 == "leave")
-                                                {
-                                                    //Zurück ins Untermenü PH
-                                                    Console.WriteLine("Ich hoffe es hat ihnen gefallen\nTschüss");
-                                                    leave = true;
-                                                    Console.ReadKey();
-                                                }
-                                                else
-                                                {
-                                                    //Erneute Eingabeaufforderung, wegen falscher Eingabe
-                                                    Console.WriteLine("Falsche Eingabe erkannt.\nBitte eine der Angegebenen Zahlen eingeben um fortfahren zu können\n");
-                                                    Console.ReadKey();
-                                                }
-                                            } while (!leave);
+                                            //Feature 1 Danny
                                             break;
 
                                         case 2:
-                                            //Feature 2
+                                            //Feature 2 Shehan
                                             break;
 
                                         case 3:
-                                            //Feature 3
+                                            //Feature 3 Cihan
                                             break;
 
                                         case 4:
-                                            //Feature 4
+                                            //Feature 4 Simon
                                             break;
                                     }  
                                     
