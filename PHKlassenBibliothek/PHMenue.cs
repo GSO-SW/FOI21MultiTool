@@ -73,6 +73,7 @@ namespace PHKlassenBibliothek
                     subexit = true;
                     Console.WriteLine("Um fortzufahren eine beliebige Taste drücken.");
                     Console.ReadKey();
+                    MultiTool.Hauptmenue.HauptmenueAufruf();
                 }
 
                 else
